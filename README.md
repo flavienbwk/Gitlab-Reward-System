@@ -43,20 +43,25 @@ None (under active development).
 
 Preview | Name | Description | Code name | Properties
 --------|------|-------------|------|-----------
-_None_ | I am a real {company} engineer ! | I've commited to the codebase in the last 3 months | present | computed, unique
+_None_ | I am a real {company name} engineer ! | I've commited to the codebase in the last 3 months | present | computed, unique
 _None_ | Polyglot 1 | I code in 1 language | polyglot | computed, overlayed
 _None_ | Polyglot 2 | I code in 2 languages | polyglot | computed, overlayed
 _None_ | Polyglot 4 | I code in 4 languages | polyglot | computed, overlayed
 _None_ | Polyglot 6 | I code in 6 languages | polyglot | computed, overlayed
 _None_ | Polyglot 8 | I code in 8 languages ! | polyglot | computed, overlayed
 _None_ | Polyglot 10+ | I code in at least 10 languages ! | polyglot | computed, overlayed
-_None_ | Commit writer | I enjoy writing extensive commit descriptions | commit-writer | computed, unique
+_None_ | Commit writer | I enjoy writing extensive commit descriptions (>80 characters) | commit-writer | computed, unique
 _None_ | Little star | My repos have been stared at least 1 time ! | star-aficionado | computed, overlayed
 _None_ | Rising star | My repos have been stared at least 10 times ! | star-aficionado | computed, overlayed
+_None_ | Contributor 1  | I've contributed to at least 0.1% of the codebase | contributor | computed, overlayed
+_None_ | Contributor 2  | I've contributed to at least 1% of the codebase | contributor | computed, overlayed
+_None_ | Contributor 3  | I've contributed to at least 3% of the codebase | contributor | computed, overlayed
+_None_ | Contributor 4  | I've contributed to at least 5% of the codebase | contributor | computed, overlayed
+_None_ | Contributor 5  | I've contributed to at least 10% of the codebase | contributor | computed, overlayed
 _None_ | Superstar | My repos have been stared at least 20 times ! | star-aficionado | computed, overlayed
 _None_ | Intern ! | I've once been an intern | contract-type | attributed, cumulative
 _None_ | Apprentice ! | I've once been an apprentice | contract-type | attributed, cumulative
-_None_ | Full-time employee ! | I've once been a full-time employee | contract-type | Attributed, cumulative
+_None_ | Full-time employee ! | I've once been a full-time employee | contract-type | attributed, cumulative
 
 :information_source: _attributed_ badges are given by a Gitlab RS administrator through the administration interface (`/admin-dashboard`).
 
