@@ -53,6 +53,11 @@ _None_ | Polyglot 10+ | I code in at least 10 languages ! | polyglot | computed,
 _None_ | Commit writer | I enjoy writing extensive commit descriptions (>80 characters) | commit-writer | computed, unique
 _None_ | Little star | My repos have been stared at least 1 time ! | star-aficionado | computed, overlayed
 _None_ | Rising star | My repos have been stared at least 10 times ! | star-aficionado | computed, overlayed
+_None_ | Issues whipper 1 | I've closed +10 issues ! | issues-closer | computed, overlayed
+_None_ | Issues hunter 2 | I've closed +25 issues ! | issues-closer | computed, overlayed
+_None_ | Issues sniper 3 | I've closed +50 issues ! | issues-closer | computed, overlayed
+_None_ | Issues killer | I've closed +100 issues ! | issues-closer | computed, overlayed
+_None_ | Issues destroyer | I've closed +200 issues ! | issues-closer | computed, overlayed
 _None_ | Contributor 1  | I've contributed to at least 0.1% of the codebase | contributor | computed, overlayed
 _None_ | Contributor 2  | I've contributed to at least 1% of the codebase | contributor | computed, overlayed
 _None_ | Contributor 3  | I've contributed to at least 3% of the codebase | contributor | computed, overlayed
@@ -66,6 +71,12 @@ _None_ | Full-time employee ! | I've once been a full-time employee | contract-t
 :information_source: _attributed_ badges are given by a Gitlab RS administrator through the administration interface (`/admin-dashboard`).
 
 :information_source: _overlayed_ badges are badges that cannot be cummulated. The highest will replace the last one earned.
+
+### System & rules
+
+A CRON task runs every 24 hours (by default) to compute statistics and badges.
+
+If the badge requires a **percentage** of _something_ : the user reaching the conditions to win the badge keeps it even if he doesn't reach the conditions one other day.
 
 ## Philosophy (how Gitlab RS can help your team)
 
