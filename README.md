@@ -59,9 +59,9 @@ _None_ | Polyglot 10+ | I code in at least 10 languages ! | polyglot | computed,
 _None_ | Commit writer | I enjoy writing extensive commit descriptions (>80 characters) | commit-writer | computed, unique
 _None_ | Little star | My repos have been stared at least 1 time ! | star-aficionado | computed, overlayed
 _None_ | Rising star | My repos have been stared at least 10 times ! | star-aficionado | computed, overlayed
-_None_ | Issues whipper 1 | I've closed +10 issues ! | issues-closer | computed, overlayed
-_None_ | Issues hunter 2 | I've closed +25 issues ! | issues-closer | computed, overlayed
-_None_ | Issues sniper 3 | I've closed +50 issues ! | issues-closer | computed, overlayed
+_None_ | Issues whipper | I've closed +10 issues ! | issues-closer | computed, overlayed
+_None_ | Issues hunter | I've closed +25 issues ! | issues-closer | computed, overlayed
+_None_ | Issues sniper | I've closed +50 issues ! | issues-closer | computed, overlayed
 _None_ | Issues killer | I've closed +100 issues ! | issues-closer | computed, overlayed
 _None_ | Issues destroyer | I've closed +200 issues ! | issues-closer | computed, overlayed
 _None_ | Contributor 1  | I've contributed to at least 0.1% of the codebase | contributor | computed, overlayed
