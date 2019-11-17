@@ -1,6 +1,12 @@
 # Gitlab Reward System (Gitlab RS)
 
+<center>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[![](./api/app/static/logo.png)]()
+
+</center>
 
 A web service which implements a reward system with badges based on statistics using your Gitlab instance API.
 
