@@ -64,6 +64,11 @@ _None_ | Issues hunter | I've closed +25 issues ! | issues-closer | computed, ov
 _None_ | Issues sniper | I've closed +50 issues ! | issues-closer | computed, overlayed
 _None_ | Issues killer | I've closed +100 issues ! | issues-closer | computed, overlayed
 _None_ | Issues destroyer | I've closed +200 issues ! | issues-closer | computed, overlayed
+_None_ | PR explorer | I've opened +10 PR ! | pull-requester | computed, overlayed
+_None_ | PR aficionado | I've opened +25 PR ! | pull-requester | computed, overlayed
+_None_ | PR cherif | I've opened +50 PR ! | pull-requester | computed, overlayed
+_None_ | PR prince(ss) | I've opened +100 PR ! | pull-requester | computed, overlayed
+_None_ | Kind of PR | I've opened +200 PR ! | pull-requester | computed, overlayed
 _None_ | Contributor 1  | I've contributed to at least 0.1% of the codebase | contributor | computed, overlayed
 _None_ | Contributor 2  | I've contributed to at least 1% of the codebase | contributor | computed, overlayed
 _None_ | Contributor 3  | I've contributed to at least 3% of the codebase | contributor | computed, overlayed
