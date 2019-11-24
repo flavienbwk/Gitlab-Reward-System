@@ -24,3 +24,8 @@ services:
       - 8080:8080
     volumes:
       - ./api/app:/app
+    env_file:
+      - .env
+    environment: 
+      GITLAB_ENDPOINT: ${GITLAB_ENDPOINT}
+      GITLAB_ACCESS_TOKEN: ${GITLAB_ACCESS_TOKEN}

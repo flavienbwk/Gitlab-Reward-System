@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[![](./api/app/static/logo.png)]()
+[![Gitlab RS logo](./api/app/static/logo.png)](./api/app/static/logo.png)
 
 </center>
 
