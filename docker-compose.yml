@@ -23,9 +23,10 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - ./api/app:/app
+      - ./api/src:/src
     env_file:
       - .env
     environment: 
+      FLASK_ENV: "development" # development | production
       GITLAB_ENDPOINT: ${GITLAB_ENDPOINT}
       GITLAB_ACCESS_TOKEN: ${GITLAB_ACCESS_TOKEN}
