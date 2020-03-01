@@ -5,11 +5,13 @@ LABEL maintainer="flavien@berwick.fr"
 RUN mkdir /app
 WORKDIR /app
 
-COPY ./entrypoint.sh /entrypoint.sh
 COPY ./requirements.txt /
 RUN pip install -r /requirements.txt
 
+COPY ./entrypoint.sh /entrypoint.sh
+
 ENV PYTHONPATH "/src"
+
 EXPOSE 8080
 
 ENTRYPOINT [ "bash", "/entrypoint.sh" ]

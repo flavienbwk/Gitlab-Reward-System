@@ -1,23 +1,23 @@
+import os
 from flask import Flask
-from flask_restplus import Api, Resource, fields
-from environment.instance import environment_config
+from flask_migrate import Migrate, MigrateCommand
+from flask_script import Manager
+from server.create_app import create_app, database
+
+from server.blueprint import blueprint
+
 
 class Server(object):
     def __init__(self):
-        self.app = Flask(__name__)
-        self.api = Api(
-            self.app, 
-            version='0.1',
-            title='Gitlab RS',
-            description='A web interface allowing your team to visualize their GitLab statistics.',
-            doc=environment_config["swagger-url"]
-        )
+        self.app = create_app(os.environ.get("FLASK_ENV"))
+        self.app.register_blueprint(blueprint)
+        self.app.app_context().push()
+        self.manager = Manager(self.app)
+        migrate = Migrate(self.app, database)
+        self.manager.add_command('database', MigrateCommand)
+        database.init_app(self.app)
 
     def run(self):
-        self.app.run(
-                host="0.0.0.0",
-                debug=environment_config["debug"], 
-                port=environment_config["port"]
-            )
+        self.manager.run()
 
 server = Server()

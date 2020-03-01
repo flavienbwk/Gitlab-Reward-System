@@ -1,10 +1,12 @@
 from flask_restplus import fields
-from server.instance import server
+from server.instance import database
 
-badge = server.api.model('Badge', {
-    'id': fields.Integer(description='Id'),
-    'title': fields.String(required=True, min_length=1, max_length=64, description='Badge name'),
-    'description': fields.String(max_length=256, description='Badge description'),
-    'image': fields.String(description="Badge image URI"),
-    'created_at': fields.DateTime(required=True, description="Badge creation date")
-})
+class Badge(database.Model):
+    """ Badge Model for storing badge related details """
+    __tablename__ = "badge"
+
+    id = database.Column(database.Integer, primary_key=True, autoincrement=True)
+    name = database.Column(database.String(64), unique=True, nullable=False)
+    description = database.Column(database.String(255), nullable=True)
+    image = database.Column(database.String(255), nullable=True)
+    created_at = database.Column(database.DateTime, nullable=False)
