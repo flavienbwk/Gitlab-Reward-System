@@ -2,9 +2,10 @@ import os
 from flask import Flask
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
-from server.create_app import create_app, database
 
+from server.create_app import create_app, database
 from server.blueprint import blueprint
+from utils.gitlab import gitlab_api
 
 
 class Server(object):

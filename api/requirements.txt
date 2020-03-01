@@ -10,3 +10,4 @@ python-dotenv==0.10.3
 bcrypt==3.1.7
 jsonschema==3.2.0
 PyMySQL==0.9.3
+python-gitlab==2.0.1

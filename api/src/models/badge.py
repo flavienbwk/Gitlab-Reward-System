@@ -10,3 +10,6 @@ class Badge(database.Model):
     description = database.Column(database.String(255), nullable=True)
     image = database.Column(database.String(255), nullable=True)
     created_at = database.Column(database.DateTime, nullable=False)
+
+    def __repr__(self):
+        return "<Badge '{}'>".format(self.name)
